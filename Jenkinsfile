@@ -26,7 +26,7 @@ pipeline {
         }
         stage ('Deploy Build in Staging Area') {
             steps {
-                build job : 'Deploy_Servlet_staging_env_pipeline'
+                build job : 'pipeline_servlet_staging'
             }
         }   
     }
